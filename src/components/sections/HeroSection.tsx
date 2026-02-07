@@ -41,7 +41,7 @@ export const HeroSection = () => {
     <section
       ref={containerRef}
       id="home"
-      className="relative min-h-[110vh] flex items-center overflow-hidden"
+      className="relative min-h-screen flex items-start lg:items-center overflow-hidden pb-20"
     >
       {/* Background Image - Theme Aware */}
       <div className="absolute inset-0 z-0">
@@ -71,14 +71,14 @@ export const HeroSection = () => {
       {/* Layer 3: Airplane (Lucide Icon restored) */}
       <Airplane
         style={{ x: airplaneX, y: airplaneY }}
-        className="top-[20%] left-0 z-10 text-white opacity-90"
+        className="top-[12%] left-0 z-10 text-white opacity-60 pointer-events-none"
         size={64} // Standard Luxice Icon Size
         animate={{ y: [0, -10, 0] }} // Gentle float
         transition={{ y: { duration: 3, repeat: Infinity, ease: "easeInOut" } }}
       />
 
       {/* --- Main Grid Layout --- */}
-      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-20 h-full pt-10">
+      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-20 h-full pt-28 lg:pt-0">
 
         {/* Left Column: Text Content */}
         <motion.div

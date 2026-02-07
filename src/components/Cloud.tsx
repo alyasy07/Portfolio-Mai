@@ -23,7 +23,7 @@ export const Cloud = ({ className, size = "md", variant = "light", ...props }: C
 
   return (
     <motion.div
-      className={cn("absolute pointer-events-none text-white blur-md", sizeClasses[size], opacityClasses[variant], className)}
+      className={cn("absolute pointer-events-none text-white blur-md dark:opacity-30 transition-opacity duration-500", sizeClasses[size], opacityClasses[variant], className)}
       {...props}
     >
       <svg
