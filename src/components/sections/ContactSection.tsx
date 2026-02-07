@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import emailjs from '@emailjs/browser';
+
 
 const contactInfo = [
   {
@@ -95,24 +95,25 @@ export const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // EmailJS configuration - Replace with your actual IDs
-      // Get these from https://www.emailjs.com/
-      const serviceId = 'YOUR_SERVICE_ID';
-      const templateId = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
-
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
+      const response = await fetch("https://formsubmit.co/ajax/nimbmp@gmail.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          to_name: 'Maisarah',
-        },
-        publicKey
-      );
+          _template: 'table', // Optional: simpler email format
+          _captcha: 'false'   // Optional: disable captcha if wanted, or keep it
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
 
       toast({
         title: "Message Sent! ✈️",
@@ -122,7 +123,7 @@ export const ContactSection = () => {
       setFormData({ name: "", email: "", subject: "", message: "" });
       setErrors({});
     } catch (error) {
-      console.error('EmailJS Error:', error);
+      console.error('FormSubmit Error:', error);
       toast({
         title: "Oops! Something went wrong",
         description: "Please try again or contact me directly via email.",
