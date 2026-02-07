@@ -38,7 +38,7 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/Maeyii1152", label: "GitHub" },
+  { icon: Github, href: "https://github.com/Maeyi1152", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/maisarah-padzil", label: "LinkedIn" },
 ];
 

@@ -197,7 +197,7 @@ export const HeroSection = () => {
       >
         {/* Social Icons Row */}
         <div className="flex items-center gap-6 bg-white/30 dark:bg-slate-800/50 backdrop-blur-md px-8 py-3 rounded-full border border-white/40 dark:border-slate-600/50 shadow-sm">
-          <a href="https://github.com/alyasy07" target="_blank" rel="noopener noreferrer" className="text-sky-900/80 dark:text-sky-300 hover:text-sky-950 dark:hover:text-white transition-all transform hover:-translate-y-1"><Github size={20} /></a>
+          <a href="https://github.com/Maeyi1152" target="_blank" rel="noopener noreferrer" className="text-sky-900/80 dark:text-sky-300 hover:text-sky-950 dark:hover:text-white transition-all transform hover:-translate-y-1"><Github size={20} /></a>
           <a href="https://www.linkedin.com/in/maisarah-padzil" target="_blank" rel="noopener noreferrer" className="text-sky-900/80 dark:text-sky-300 hover:text-sky-950 dark:hover:text-white transition-all transform hover:-translate-y-1"><Linkedin size={20} /></a>
           <a href="mailto:nimbmp@gmail.com" className="text-sky-900/80 dark:text-sky-300 hover:text-sky-950 dark:hover:text-white transition-all transform hover:-translate-y-1 relative z-50"><Mail size={20} /></a>
         </div>
