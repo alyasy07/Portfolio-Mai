@@ -7,7 +7,7 @@ const projectsData = [
     title: "Outlet Ordering Distribution System",
     description: "Distribution system developed using Visual Studio Code. Includes SRS and SDD documentation.",
     technologies: ["VS Code", "System Design", "Documentation"],
-    image: "/public/images/oods_logo.jpeg",
+    image: "/images/oods_logo.jpeg",
     buttons: [
       { type: "github", url: "https://github.com/alyasy07/OODSV30" },
       { type: "figma", url: "https://www.figma.com/proto/Qf4NhVPSPzA2OtUQLnxwmB/Untitled?node-id=0-1&t=BJgtpw4Xm1uKGoHY-1" }
@@ -17,7 +17,7 @@ const projectsData = [
     title: "Recipe Sharing and Meal Planning System",
     description: "Meal planning and recipe sharing application using Java EE architecture.",
     technologies: ["JSP", "Servlet", "Java EE", "JDBC", "MVC"],
-    image: "/public/images/recipe_logo.jpg",
+    image: "/images/recipe_logo.jpg",
     buttons: [
       { type: "github", url: "https://github.com/athirahmmn/Group_Project_CSC584" },
       { type: "figma", url: "https://www.figma.com/proto/ShEH6pPqv50Jna4Or24bpZ/RSMP?node-id=0-1&t=BJgtpw4Xm1uKGoHY-1" }
@@ -27,7 +27,7 @@ const projectsData = [
     title: "Bookshop Online Store",
     description: "E-commerce platform for a bookshop developed with PHP and MySQL.",
     technologies: ["PHP", "MySQL", "Web Development"],
-    image: "/public/images/book.png",
+    image: "/images/book.png",
     buttons: [
       { type: "figma", url: "#" }
     ]
@@ -36,7 +36,7 @@ const projectsData = [
     title: "Peer Testing - Inventory Management System",
     description: "BH&CO Inventory System with full testing documentation (UAT, STD, STR).",
     technologies: ["Software Testing", "Documentation", "UAT"],
-    image: "/public/images/testing.png",
+    image: "/images/testing.png",
     buttons: [
       { type: "document", url: "https://github.com/alyasy07/documentation/blob/main/STD%20(BH%26CO%20IMS)_FIVERS.pdf" }
     ]
@@ -45,7 +45,7 @@ const projectsData = [
     title: "Levée Fashion Recommendation App",
     description: "Mobile application design and business plan documented using Figma.",
     technologies: ["Figma", "UI/UX", "Business Planning"],
-    image: "/public/images/levee_logo.jpeg",
+    image: "/images/levee_logo.jpeg",
     buttons: [
       { type: "figma", url: "https://www.figma.com/proto/ktsdaRl9B2JUcRxPbWw9P3/ISP640---MIDDLE-FIDELITY--Copy-?node-id=0-1&t=LJ8eU3eSF4k5qBuQ-1" }
     ]
@@ -54,7 +54,7 @@ const projectsData = [
     title: "E-Wallet with Creative Savings",
     description: "Spendity - Creative savings strategy E-Wallet interface designed with Figma.",
     technologies: ["Figma", "UI/UX", "Prototyping"],
-    image: "/public/images/spendity_logo.jpeg",
+    image: "/images/spendity_logo.jpeg",
     buttons: [
       { type: "figma", url: "https://www.figma.com/proto/5PUTLsflRLjcolV5fI71yr/ICT551-MIDDLE-FIDELITY?node-id=0-1&t=BnPuGWVtPFdR9wxq-1" }
     ]

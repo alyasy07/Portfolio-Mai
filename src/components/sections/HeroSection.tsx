@@ -160,7 +160,7 @@ export const HeroSection = () => {
             {/* Profile Image Container */}
             <div className="w-full h-full rounded-t-[80px] rounded-b-[30px] overflow-hidden relative shadow-inner border-[4px] border-white/20">
               <img
-                src="/public/images/Maisarah.png"
+                src="/images/Maisarah.png"
                 alt="Nurul Izzati Maisarah"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
